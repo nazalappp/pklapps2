@@ -41,3 +41,7 @@ Route::get('/test-admin', function(){
 Route::get('/hello', function () {
     return view('hello');
 });
+
+// route nilai
+use App\Http\Controllers\WaliController;
+Route::resource('wali', WaliController::class);
