@@ -1,5 +1,5 @@
 
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
     <div class="container">
@@ -16,7 +16,7 @@
 
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table align-middle" id="dataTable">
+                            <table class="table align-middle table-hover" id="dataTable">
                                 <thead>
                                     <tr>
                                         <th>No</th>
