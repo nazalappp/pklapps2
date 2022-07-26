@@ -14,7 +14,7 @@
                             @csrf
                             @method('put')
                             <div class="mb-3">
-                                <label class="form-label">Nomor Wali</label>
+                                <label class="form-label">Nama Wali</label>
                                 <input type="text" class="form-control  @error('nama') is-invalid @enderror"
                                     name="nama" value="{{ $wali->nama }}">
                                 @error('nama')
@@ -42,8 +42,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Pilih Data Siswa</label>
-                                <select name="id_siswa" id=""></select>
-                                <input type="text" class="form-control  @error('id_siswa') is-invalid @enderror" readonly>
+                                <select name="id_siswa" class="form-control  @error('id_siswa') is-invalid @enderror" readonly></select>                                                        
                                 @foreach ($siswa as $data)
                                     <option value="{{$data->id}}"
                                     {{$data-> == $wali->id_siswa ? 'selected' : ''}}>

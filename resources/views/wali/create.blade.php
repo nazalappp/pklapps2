@@ -10,7 +10,7 @@
                         Data Wali
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('wali.store') }}" method="post">
+                        <form action="{{ route('wali.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Nama Wali</label>
